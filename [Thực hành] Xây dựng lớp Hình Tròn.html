@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let Cirle = function (radius,color) {
+        this.radius= radius;
+        this.color= color;
+        this.getRadius = function () {
+            return this.radius;
+        }
+        this.getcolor = function () {
+            return this.color;
+        }
+        this.getArea = function () {
+            return Math.PI * this.radius * this.radius;
+        }
+    }
+    let tinh =  new Cirle(1, "xanh");
+    alert(tinh.getArea());
+    alert(tinh.getRadius());
+    alert(tinh.getcolor());
+
+</script>
+</body>
+</html>
